@@ -1,0 +1,15 @@
+backend:
+  phases:
+    build:
+      commands:
+        - amplifyPush --simple
+frontend:
+  framework: react
+  phases:
+    build:
+      commands:
+        - yarn install
+        - yarn build
+    deploy:
+      commands:
+        - amplify publish
