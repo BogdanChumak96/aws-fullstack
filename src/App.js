@@ -1,14 +1,15 @@
-import logo from './logo.svg';
 import './App.css';
+import LoginForm from "./LoginForm";
+import { withAuthenticator } from "@aws-amplify/ui-react";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-       Hello First
-      </header>
+       Hello
+        {/*<LoginForm />*/}
     </div>
+
   );
 }
 
-export default App;
+export default withAuthenticator(App);
