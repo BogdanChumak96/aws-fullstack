@@ -8,8 +8,8 @@ frontend:
   phases:
     build:
       commands:
-        - yarn install
-        - yarn build
+        - npm install
+        - npm build
     deploy:
       commands:
         - amplify publish
